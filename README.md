@@ -10,3 +10,12 @@
 - git commit -m => Adiciona um nome ao commit 
 - git pull origin <nome-da-branch> => puxa as informações da branch informada
 - git push origin <nome-da-branch> => envia o commit pra branch informada
+
+
+# TRANSFORMANDO O PROTÓTIPO EM CÓDIGO
+
+1. Olhar o protótipo e identificar quais as grandes separações semanticas;
+2. Construir todo o esqueleto do protótipo (somente HTML);
+3. Começar o CSS: estilizar tudo que é fonte, cor e tamanho dos elementos;
+4. CSS: espaçamentos internos e externos, posicionamento dos elementos;
+5. Adicionar as transformações: todas as interações que mudam de acordo com a ação do usuário.
