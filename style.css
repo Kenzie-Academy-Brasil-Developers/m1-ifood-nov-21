@@ -1,3 +1,8 @@
+/*@font-face {
+    font-family: Fonte-Principal;
+    src: url(font/nome-da-font.woff);
+}*/
+
 /* 
 SELETORES
 
@@ -21,6 +26,9 @@ COR
 -hexadecimal
 -rgb
 */
+body{
+    font-family: Roboto, sans-serif;
+}
 
 header {
     font-family: Roboto;
@@ -35,7 +43,7 @@ h1 {
     font-size: 36px;
 }
 
-nav {
+.menu {
     height: 50px;
     background-color: #525252;
 }
@@ -69,4 +77,60 @@ nav {
     color: #ffffff;
 }
 
+h2{
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 48px;
+    color: #000000;
+}
+p{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 30px;
+}
 
+h3{
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.box-noticias h4{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+}
+.box-noticias span{
+    font-size: 14px;
+    font-weight: 400;
+}
+.box-noticias p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+footer{
+    height: 270px;
+    background-color: #414141;
+    border-top:6px solid #FF5F8F;
+}
+
+/*
+border-top
+border-right
+border-bottom
+border-left
+
+border: expessura tipo cor;
+
+
+margin: top right bottom left;
+margin: top/bottom right/left;
+margin-top
+margin-right
+margin-left
+margin-bottom
+
+padding
+
+*/
