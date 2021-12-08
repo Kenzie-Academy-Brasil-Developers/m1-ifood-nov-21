@@ -26,14 +26,17 @@ COR
 -hexadecimal
 -rgb
 */
-body{
+*{
     font-family: Roboto, sans-serif;
+    box-sizing: border-box;
 }
 
 header {
     font-family: Roboto;
     height: 91px;
     background-color: #FF5F8F;
+    padding-top: 27px;
+    margin-bottom: 2px;
 }
 
 h1 {
@@ -41,12 +44,30 @@ h1 {
     font-family: Roboto;
     font-weight: bold;
     font-size: 36px;
+    text-align: center;
 }
 
 .menu {
     height: 50px;
     background-color: #525252;
 }
+.menu--lista{
+    height: 50px;
+    padding: 9px 40px;
+}
+.menu--item{
+    float: left;
+    font-family: Roboto;
+    margin-right: 90px;
+    margin-top: 8px;
+    font-weight: 500;
+}
+.menu--item:last-child{
+    margin-right: 0px;
+    margin-top: 0px;
+    float:right;
+}
+
 .menu--link {
     color: #ffffff;
     text-decoration: none;
@@ -55,11 +76,11 @@ h1 {
 }
 
 .menu--input {
-    height: 18px;
+    height: 32px;
     background: #FFFFFF;
     border: 1px solid #A2A2A2;
     border-radius: 5px;
-    width: 100px;
+    width: 274px;
 }
 
 .menu--button {
@@ -73,6 +94,11 @@ h1 {
     cursor: pointer;
 }
 
+main{
+    padding: 40px 42px 32px 42px;
+    height: 614px;
+}
+
 .span--copyright {
     color: #ffffff;
 }
@@ -82,6 +108,11 @@ h2{
     font-weight: 300;
     font-size: 48px;
     color: #000000;
+    text-align: center;
+    margin-bottom: 27px;
+}
+article{
+    margin-bottom: 65px;
 }
 p{
     font-weight: 300;
@@ -92,16 +123,33 @@ p{
 h3{
     font-weight: 300;
     font-size: 36px;
+    margin-bottom: 18px;
+}
+
+.box-noticias{
+    width: 387px;
+    height: 160px;
+    float: left;
+    margin-right: 17px;
+}
+.box-noticias:last-child{
+    margin-right: 0px;
+}
+.box-noticias img{
+    margin-right: 8px;
+    float: left;
 }
 
 .box-noticias h4{
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+    margin-bottom: 6px;
 }
 .box-noticias span{
     font-size: 14px;
     font-weight: 400;
+    padding-bottom: 4px;
 }
 .box-noticias p{
     font-size: 16px;
@@ -113,6 +161,8 @@ footer{
     height: 270px;
     background-color: #414141;
     border-top:6px solid #FF5F8F;
+    clear: both;
+    margin-top: 24px;
 }
 
 /*
