@@ -160,11 +160,30 @@ h3{
 footer{
     height: 270px;
     background-color: #414141;
-    border-top:6px solid #FF5F8F;
+    border-top:6px solid hsl(342, 100%, 69%);
     clear: both;
     margin-top: 24px;
+    font-family: Roboto;
+    padding: 49px 42px 12px 42px;
 }
 
+.menu-rodape{
+    height: 149px;
+}
+.menu-rodape ul{
+    height: 149px;
+}
+.menu-rodape li{
+    margin-bottom: 28px;
+}
+.menu-rodape li:last-child{
+    margin-bottom: 0px;
+}
+
+footer span{
+    float: right;
+    margin-top: 39px;
+}
 /*
 border-top
 border-right
