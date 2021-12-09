@@ -54,7 +54,15 @@ h1 {
 .menu--lista{
     height: 50px;
     padding: 9px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto;
 }
+.item-4{
+    order:2;
+}
+/*
 .menu--item{
     float: left;
     font-family: Roboto;
@@ -66,7 +74,7 @@ h1 {
     margin-right: 0px;
     margin-top: 0px;
     float:right;
-}
+}*/
 
 .menu--link {
     color: #ffffff;
