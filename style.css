@@ -59,9 +59,25 @@ h1 {
     align-items: center;
     font-family: Roboto;
 }
-.item-4{
-    order:2;
+.item-5{
+    align-self: flex-end;
 }
+.menu--lista li:nth-child(2):hover{
+    border:1px solid #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.menu--lista li:nth-child(3){
+    border:1px solid rgb(212, 176, 248);
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.menu--item:hover .menu--link{
+    color:salmon;
+}
+
 /*
 .menu--item{
     float: left;
@@ -122,6 +138,15 @@ h2{
 article{
     margin-bottom: 65px;
 }
+article p::before{
+    content: 'LEIA';
+    color:red;
+}
+article p::after{
+    content: '';
+    color:green;
+}
+
 p{
     font-weight: 300;
     font-size: 18px;
@@ -140,6 +165,10 @@ h3{
     float: left;
     margin-right: 17px;
 }
+.box-noticias:hover h4{
+    border:3px dashed hotpink;
+}
+
 .box-noticias:last-child{
     margin-right: 0px;
 }
@@ -159,20 +188,41 @@ h3{
     font-weight: 400;
     padding-bottom: 4px;
 }
+
 .box-noticias p{
     font-size: 16px;
     font-weight: 400;
     line-height: 22px;
 }
+.box-noticias p:hover{
+    color:red;
+    cursor: pointer;
+}
+.box-noticias p:active{
+    color:green;
+}
+.box-noticias p:visited{
+    color:hotpink;
+}
 
 footer{
     height: 270px;
     background-color: #414141;
-    border-top:6px solid hsl(342, 100%, 69%);
+    /*border-top:6px solid hsl(342, 100%, 69%);*/
     clear: both;
     margin-top: 24px;
     font-family: Roboto;
     padding: 49px 42px 12px 42px;
+    position: relative;
+}
+footer::before{
+    height: 5px;
+    background-color: hotpink;
+    width: 100%;
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0px;
 }
 
 .menu-rodape{
@@ -184,6 +234,7 @@ footer{
 .menu-rodape li{
     margin-bottom: 28px;
 }
+
 .menu-rodape li:last-child{
     margin-bottom: 0px;
 }
@@ -209,5 +260,34 @@ margin-left
 margin-bottom
 
 padding
+*/
+
+/*
+PSEUDO CLASS:
+------Ação do usuário-----
+:hover
+:active
+:focus
+
+----Localização----
+:visited
+
+----Entrada----
+:disabled
+:checked
+----Formularios----
+:valid
+:required
+
+
+:last-child
+:first-child
+:nth-child(2)
+
+
+PSEUDO ELEMENT
+
+::before
+::after
 
 */
