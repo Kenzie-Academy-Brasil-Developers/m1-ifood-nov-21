@@ -1,293 +1,37 @@
-/*@font-face {
-    font-family: Fonte-Principal;
-    src: url(font/nome-da-font.woff);
-}*/
-
-/* 
-SELETORES
-
--tag
--classes
--id
-
-tag {
-}
-.class {
-}
-#id {
-}
-
-seletor {
-    propriedade: valor;
-}
-
-COR
--nome
--hexadecimal
--rgb
-*/
-*{
-    font-family: Roboto, sans-serif;
-    box-sizing: border-box;
-}
-
-header {
-    font-family: Roboto;
-    height: 91px;
-    background-color: #FF5F8F;
-    padding-top: 27px;
-    margin-bottom: 2px;
-}
-
-h1 {
-    color: #ffffff;
-    font-family: Roboto;
-    font-weight: bold;
-    font-size: 36px;
-    text-align: center;
-}
-
-.menu {
-    height: 50px;
-    background-color: #525252;
-}
-.menu--lista{
-    height: 50px;
-    padding: 9px 40px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: Roboto;
-}
-.item-5{
-    align-self: flex-end;
-}
-.menu--lista li:nth-child(2):hover{
-    border:1px solid #ffffff;
-    padding: 8px;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-.menu--lista li:nth-child(3){
-    border:1px solid rgb(212, 176, 248);
-    padding: 8px;
-    border-radius: 5px;
-}
-
-.menu--item:hover .menu--link{
-    color:salmon;
-}
-
 /*
-.menu--item{
-    float: left;
-    font-family: Roboto;
-    margin-right: 90px;
-    margin-top: 8px;
-    font-weight: 500;
-}
-.menu--item:last-child{
-    margin-right: 0px;
-    margin-top: 0px;
-    float:right;
-}*/
+UNIDADE DE MEDIDA FIXA
+-> PX
 
-.menu--link {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-}
+UNIDADES DE MEDIDA RELATIVAS
+FONTES
+-> EM: vai levar em consideração o valor do body/do pai direto
+ valor do pai * valor de em: 14px * 1.2em => 16.8px
 
-.menu--input {
-    height: 32px;
-    background: #FFFFFF;
-    border: 1px solid #A2A2A2;
-    border-radius: 5px;
-    width: 274px;
-}
+-> REM: vai levar em consideração o valor do ROOT/HTML
 
-.menu--button {
-    font-style: normal;
-    font-weight: bold;
+TAMANHO DE ELEMENTOS
+-> VH: altura da viewport => viewport 900px: 1vh -> 9px
+-> VW: largura da viewport
+
+-> %
+*/
+body{
     font-size: 14px;
-    line-height: 16px;
-    color: #ffffff;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
+    height: 100%;
+}
+section{
+    font-size: 1.2em;
+    height: 100vh;
+    width: 20vw;
+    background-color: greenyellow;
+}
+span{
+    font-size: 1.2em; /*16.8px * 1.2 = 20.16px*/
+    height: 100vh;
+    width: 50vw;
+    background-color: indianred;
 }
 
-main{
-    padding: 40px 42px 32px 42px;
-    height: 614px;
+@media screen (){
+    
 }
-
-.span--copyright {
-    color: #ffffff;
-}
-
-h2{
-    font-family: Roboto;
-    font-weight: 300;
-    font-size: 48px;
-    color: #000000;
-    text-align: center;
-    margin-bottom: 27px;
-}
-article{
-    margin-bottom: 65px;
-}
-article p::before{
-    content: 'LEIA';
-    color:red;
-}
-article p::after{
-    content: '';
-    color:green;
-}
-
-p{
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 30px;
-}
-
-h3{
-    font-weight: 300;
-    font-size: 36px;
-    margin-bottom: 18px;
-}
-
-.box-noticias{
-    width: 387px;
-    height: 160px;
-    float: left;
-    margin-right: 17px;
-}
-.box-noticias:hover h4{
-    border:3px dashed hotpink;
-}
-
-.box-noticias:last-child{
-    margin-right: 0px;
-}
-.box-noticias img{
-    margin-right: 8px;
-    float: left;
-}
-
-.box-noticias h4{
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-    margin-bottom: 6px;
-}
-.box-noticias span{
-    font-size: 14px;
-    font-weight: 400;
-    padding-bottom: 4px;
-}
-
-.box-noticias p{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-}
-.box-noticias p:hover{
-    color:red;
-    cursor: pointer;
-}
-.box-noticias p:active{
-    color:green;
-}
-.box-noticias p:visited{
-    color:hotpink;
-}
-
-footer{
-    height: 270px;
-    background-color: #414141;
-    /*border-top:6px solid hsl(342, 100%, 69%);*/
-    clear: both;
-    margin-top: 24px;
-    font-family: Roboto;
-    padding: 49px 42px 12px 42px;
-    position: relative;
-}
-footer::before{
-    height: 5px;
-    background-color: hotpink;
-    width: 100%;
-    content: '';
-    position: absolute;
-    top: 4px;
-    left: 0px;
-}
-
-.menu-rodape{
-    height: 149px;
-}
-.menu-rodape ul{
-    height: 149px;
-}
-.menu-rodape li{
-    margin-bottom: 28px;
-}
-
-.menu-rodape li:last-child{
-    margin-bottom: 0px;
-}
-
-footer span{
-    float: right;
-    margin-top: 39px;
-}
-/*
-border-top
-border-right
-border-bottom
-border-left
-
-border: expessura tipo cor;
-
-
-margin: top right bottom left;
-margin: top/bottom right/left;
-margin-top
-margin-right
-margin-left
-margin-bottom
-
-padding
-*/
-
-/*
-PSEUDO CLASS:
-------Ação do usuário-----
-:hover
-:active
-:focus
-
-----Localização----
-:visited
-
-----Entrada----
-:disabled
-:checked
-----Formularios----
-:valid
-:required
-
-
-:last-child
-:first-child
-:nth-child(2)
-
-
-PSEUDO ELEMENT
-
-::before
-::after
-
-*/
