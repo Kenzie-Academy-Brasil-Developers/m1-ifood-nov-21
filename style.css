@@ -32,6 +32,15 @@ span{
     background-color: indianred;
 }
 
-@media screen (){
+@media screen and (max-width: 768px){
+    span{
+        background-color: blue;
+    }
     
+}
+
+@media screen and (max-width: 360px) {
+    span{
+        background-color: black;
+    }
 }
