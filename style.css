@@ -21,6 +21,10 @@ seletor {
     propriedade: valor;
 }
 
+:root {
+    
+}
+
 COR
 -nome
 -hexadecimal
@@ -203,6 +207,12 @@ h3{
 }
 .box-noticias p:visited{
     color:hotpink;
+}
+
+@media screen and (max-width: 512px){
+    .box-noticias:active h4{
+        border:3px dashed red;
+    }
 }
 
 footer{
