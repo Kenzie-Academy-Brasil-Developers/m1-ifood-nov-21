@@ -6,7 +6,10 @@ variaveis
 tipos de variaveis
 condicional = IF/ELSE
 comparadores
-funções
+
+funções => é conjunto de instruções que podem ser utilizadas ao longo de todo
+meu arquivo de js
+
 repetição (looping) = FOR
 estruturas de informações (arrays)
 */
@@ -20,6 +23,7 @@ estruturas de informações (arrays)
 * = multiplicação -> 2*3 = 2+2+2
 
 /
+
 ^
 
 % => divisão com resto -> 2/2 = resto 0
@@ -36,24 +40,6 @@ const */
 
 function escopo(){
 
-    if(){
-        //
-        //
-        //
-        //
-    }
-
-    for(){
-
-    }
-
-    if(){
- //
- //
- //
- //
-
-    }
 }
 /*
 
@@ -73,3 +59,65 @@ booleano => true/false | verdadeiro/falso
 */
 
 letras = 'xkv';
+
+
+'abc' === 'sdaSDSA AASDFA asdfadrq aabc'
+
+
+
+
+function somar(numero1, numero2){
+    //instruções
+    let total = numero1 + numero2;
+    
+    return total;
+}
+
+function multiplicar(num1, num2){
+    let multiplica;
+
+    multiplica = somar(num1,num2) * 2;
+
+    console.log(multiplica);
+
+    if(multiplica > 100 && multiplica < 150){
+        let subtrair = multiplica - 11;
+
+        return subtrair;
+    }else{
+        return multiplica;
+    }
+}
+
+multiplicar(13,2);
+
+let number1 = 2;
+let number2 = 3;
+
+if(number1 < number2){
+    console.log("ok");
+}
+
+/*
+&& = true + true
+
+|| = true + false || false + true
+
+===
+==
+
+!=
+!==
+
+!
+>
+<
+>=
+<=
+*/
+
+if(77 % 5 === 0){
+    console.log("Multiplo");
+}else{
+    console.log("Não multiplo");
+}
