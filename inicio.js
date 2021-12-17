@@ -64,7 +64,7 @@ letras = 'xkv';
 'abc' === 'sdaSDSA AASDFA asdfadrq aabc'
 
 
-
+//Função que recebe dois números e retorna a soma entre eles
 
 function somar(numero1, numero2){
     //instruções
@@ -73,12 +73,12 @@ function somar(numero1, numero2){
     return total;
 }
 
+somar(2,3);
+
 function multiplicar(num1, num2){
     let multiplica;
 
     multiplica = somar(num1,num2) * 2;
-
-    console.log(multiplica);
 
     if(multiplica > 100 && multiplica < 150){
         let subtrair = multiplica - 11;
@@ -89,7 +89,7 @@ function multiplicar(num1, num2){
     }
 }
 
-multiplicar(13,2);
+multiplicar(3,2);
 
 let number1 = 2;
 let number2 = 3;

@@ -1,0 +1,8 @@
+num1;num2;somar(num1+num2;somar * 2;multiplica;multiplica > 100 && multiplica < 150;subtrair;return multiplica
+3;?;?;?;?;?;?;
+3;2;?;?;?;?;?;
+3;2;somar(3+2);?;?;?;?;
+3;2;somar(3+2);5*2;?;?;?;
+3;2;somar(3+2);5*2;10;?;?;
+3;2;somar(3+2);5*2;10;false && true;-;?
+3;2;somar(3+2);5*2;10;false && true;-;10

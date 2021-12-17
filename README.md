@@ -19,3 +19,10 @@
 3. Começar o CSS: estilizar tudo que é fonte, cor e tamanho dos elementos;
 4. CSS: espaçamentos internos e externos, posicionamento dos elementos;
 5. Adicionar as transformações: todas as interações que mudam de acordo com a ação do usuário.
+
+
+# TESTE DE MESA / TRACING
+1. Identificar todas as variáveis***
+2. Utilizar uma tabela como estrutura visual 
+3. Cada coluna representa uma variável
+4. Cada linha é uma instrução do seu código
