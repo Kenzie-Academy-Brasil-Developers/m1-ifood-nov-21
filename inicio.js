@@ -87,6 +87,10 @@ function multiplicar(num1, num2){
     }else{
         return multiplica;
     }
+
+    //for(let i = num1; i < 15; i++){
+
+    //}
 }
 
 multiplicar(3,2);
@@ -95,7 +99,7 @@ let number1 = 2;
 let number2 = 3;
 
 if(number1 < number2){
-    console.log("ok");
+    //console.log("ok");
 }
 
 /*
@@ -117,7 +121,32 @@ if(number1 < number2){
 */
 
 if(77 % 5 === 0){
-    console.log("Multiplo");
+    //console.log("Multiplo");
 }else{
-    console.log("Não multiplo");
+    //console.log("Não multiplo");
+}
+
+//LOOPING DE REPETIÇÃO => FOR
+
+//for(inicializador; condição de contagem; incremento){
+    //instruções a serem repetidas
+//}
+
+for(let i = 1; i <= 10; i++){
+    if(i % 2 === 0){
+        console.log("Par: " + i);
+    }else{
+        console.log("Ímpar: " + i);
+    }
+}
+
+function parImpar(contador){
+    for(let i = 0; i <= contador; i++){
+        if(i % 2 === 0){
+            console.log("Par: " + i);
+        }else{
+            console.log("Ímpar: " + i);
+        }
+    }
+    return console.log("Finalizado");
 }
