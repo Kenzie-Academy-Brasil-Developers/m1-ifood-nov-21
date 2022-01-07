@@ -57,3 +57,8 @@ function paresPorDois(numbers){
 paresPorDois([22,5,9,12,14,35,38,27,64]);
 //mesma coisa que:
 paresPorDois(arrNumbers);
+
+
+//for aninhado
+//array multimencional
+//switch case
