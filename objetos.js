@@ -27,7 +27,10 @@ const estoque = [
         quantidade: 3,
         cor: ["vermelho", "preto", "azul"],
         marca:'',
-        tipo: ''
+        tipo: '',
+        deixaMaiuscula: function(){
+            return true;
+        },
     },
     {
         nomeProduto: "Teclado",
@@ -40,6 +43,16 @@ const estoque = [
         cor: "cinza"
     },
 ];
+
+
+let nome = 'Nicholas';
+let arrayStr = nome.split('');
+console.log(arrayStr);
+for (let i=0; i<arrayStr.length;i++){
+    console.log(arrayStr[i]);
+}
+let newString = arrayStr.join('');
+console.log(newString);
 
 //console.log(estoque[0].nomeProduto);
 
