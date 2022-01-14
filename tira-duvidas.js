@@ -69,3 +69,31 @@ function palavraInvertida(palavra){
 }
 
 palavraInvertida('duvidas');
+
+//.push
+
+const arrPalavras = [];
+
+arrPalavras.push('Isabella'); //insere no final do array
+arrPalavras[1] = 'Nicole';
+
+//.pop
+arrPalavras.pop();
+//.shift
+arrPalavras.shift();
+
+//receber um array de numeros e inserir os pares dentro de outro
+const numeros = [2,4,9,3,5,11,14];
+
+function insereElementos(arrElementos){
+    const arrPares = [];
+    for(let i = 0; i < arrElementos.length; i++){
+        if(arrElementos[i] % 2 === 0){
+            arrPares.push(arrElementos[i]);
+        }
+    }
+
+    return arrPares;
+}
+
+insereElementos(numeros);
