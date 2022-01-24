@@ -253,6 +253,12 @@ footer span{
     float: right;
     margin-top: 39px;
 }
+
+.class-teste-cor {
+    color: red;
+    border: 1px solid black;
+    text-decoration: overline;
+}
 /*
 border-top
 border-right
