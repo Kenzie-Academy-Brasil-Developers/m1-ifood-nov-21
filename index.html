@@ -5,80 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-        <title>Entendendo o HTML/CSS</title>
+        <title>Criando com DOM</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <h1>HTML + CSS</h1>
-        </header>
-        <nav class="menu">
-            <ul class="menu--lista">
-                <li id="item1" class="menu--item item-1">
-                    <a href="#" title="Home" target="_blank" class="menu--link">HOME</a>
-                </li>
-                <li class="menu--item item-2">
-                    <a href="#" title="Equipe" target="_blank" class="menu--link">EQUIPE</a>
-                </li>
-                <li class="menu--item item-3">
-                    <a href="#" title="Turma" target="_blank" class="menu--link">TURMA</a>
-                </li>
-                <li class="menu--item item-4">
-                    <a href="#" title="Contato" target="_blank" class="menu--link">CONTATO</a>
-                </li>
-                <li class="menu--item item-5">
-                    <input type="text" class="menu--input"/>
-                    <button class="menu--button">Pesquisar</button>
-                </li>
-            </ul>
-        </nav>
         <main>
-            <article>
-                <h2>Título da Reportagem</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus natus harum officiis similique eveniet deleniti nihil a. Ullam ut consequuntur explicabo voluptatibus temporibus praesentium dolorum in, magnam enim nisi iure?</p>
-            </article>
-            <section>
-                <h3>Notícias das Olimpíadas</h3>
-                <div class="box-noticias">
-                    <img src="assets/report-1.svg" alt="Jovem atleta com medalha no pódio" />
-                    <h4>Atleta jovem é medalha nas Olimpidas</h4>
-                    <span>17 Agosto 2021</span>
-                    <p>Prata em Tóquio aos 13 anos, a Brasileira Rayssa Leal subiu ao pódio ...</p>
-                </div>
-                <div class="box-noticias">
-                    <img src="assets/report-2.svg" alt="Rebeca Andrade com medalha de ouro" />
-                    <h4>50% das conquistas é feminina em Tóquio</h4>
-                    <span>14 Agosto 2021</span>
-                    <p>Rebeca Andrade faturou o ouro no salto. Ela se tornou a primeira brasileira</p>
-                </div>
-                <div class="box-noticias">
-                    <img src="assets/report-3.svg" alt="Kevin beijando medalha no pódio" />
-                    <h4>Medalhista no Brasil</h4>
-                    <span>11 Agosto 2021</span>
-                    <p>Kelvin não pode contar com a treinadora na sua prova. Na grande final ... </p>
-                </div>
-            </section>
+            <h1>Lista de compras</h1>
+            <ul id="allList">
+               <!-- <li>
+                    <input type="checkbox" />
+                    <label>Exemplo de item</label>
+                    <span>X</span>
+                </li>-->
+            </ul>
+            <h2>Adicione o item da lista:</h2>
+            <input type="text" id="valueList" />
+            <button id="add">Adicionar</button>
         </main>
-        <footer>
-            <nav class="menu-rodape">
-                <ul>
-                    <li>
-                        <a href="#" title="Home" class="menu--link">HOME</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Equipe" class="menu--link">EQUIPE</a>
-                    </li>
-                    <li>
-                        <a href="#" title="Turma" class="menu--link">TURMA</a>
-                    </li>
-                    <li>
-                        <a href="#" title="CONTATO" class="menu--link">CONTATO</a>
-                    </li>
-                </ul>
-            </nav>
-            <span class="span--copyright">Marcação de direitos por <em>Isabella Bertini</em></span>
-        </footer>
-        <script src="dom.js"></script>
+        <script src="toDoLists.js"></script>
     </body>
 </html>

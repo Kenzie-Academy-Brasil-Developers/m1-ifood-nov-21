@@ -1,5 +1,0 @@
-palavra;novaPalavra;i = palavra.length - 1;i >= 0;palavra[i];return novaPalavra;" i--"
-'SIM';?;?;?;?;?;
-'SIM';?;i = 2;?;?;?;
-'SIM';?;i = 2;true;?;?;
-'SIM';?;i = 2;true;M;?;
