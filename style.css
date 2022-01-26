@@ -307,3 +307,10 @@ PSEUDO ELEMENT
 ::after
 
 */
+
+.feito{
+    color: green;
+    font-style: italic;
+    font-weight: 200;
+    text-decoration: line-through;
+}

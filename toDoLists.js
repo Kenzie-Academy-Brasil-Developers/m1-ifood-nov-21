@@ -10,6 +10,7 @@ const toDoList = [];
 const allList = document.getElementById('allList');
 const buttonAdd = document.getElementById('add');
 
+//FUNÇÃO QUE CRIA O ITEM NA LISTA
 function newItem(){
     const valueList = document.getElementById('valueList');
 
@@ -32,8 +33,38 @@ function newItem(){
     toDoList.push(nameValue);
 }
 
+//FUNÇÃO QUE IDENTIFICA O FILHO CLICADO DA LISTA
+function identificaItem(event){
+    const itemClick = event.target;
+
+    if(itemClick.tagName === 'SPAN'){
+        removeItem(itemClick);
+    }
+    if(itemClick.tagName === 'INPUT'){
+        checked(itemClick);
+    }
+}
+
+//FUNÇÃO QUE REMOVE O ITEM CLICADO DA LISTA
+function removeItem(span){
+   span.parentElement.remove();
+
+}
+
+//FUNÇÃO DE CHECKED
+function checked(input){
+    input.parentNode.classList.toggle("feito");
+}
+
+
 buttonAdd.addEventListener('click', newItem);
+
+allList.addEventListener('click', identificaItem);
+
 
 //function checkItem(){}
 
-//function removeItem(){}
+//CAPTURING = Do pai para os filhos
+//BUBBLING = Sai dos filhos para os pais e assim para os pais desses
+
+
